@@ -4,13 +4,12 @@ import 'package:args/args.dart';
 
 void showCommands(ArgParser parser) {
   
-  print('${Colors.coloredCommand('  setup')}         ${Colors.coloredDescription('alma setup _ Set up the Cli after update for manual installation')}');
-  print('${Colors.coloredCommand('  run')}           ${Colors.coloredDescription('alma run _ Run the Flutter app')}');
-  print('${Colors.coloredCommand('  clean')}         ${Colors.coloredDescription('alma clean _ Clean project dependencies and build artifacts')}');
-  print('${Colors.coloredCommand('  feature')}       ${Colors.coloredDescription('alma feature [name] _ Create a new feature module')}');
-  print('${Colors.coloredCommand('  version')}       ${Colors.coloredDescription('alma version _ Display Flutter version')}');
-  print('${Colors.coloredCommand('  logs')}          ${Colors.coloredDescription('alma logs _ Show Current Available Cli commands')}');
-  print('${Colors.coloredCommand('  gen')}           ${Colors.coloredDescription('alma gen _  Generate app code - run build_runner')}');
-  print(Colors.coloredHeader('\nOptions:'));
+  print('${Colors.coloredCommand('  setup')}         ${Colors.coloredHeader('alma setup')}${Colors.coloredDescription(' - Set up the Cli after update for manual installation')}');
+  print('${Colors.coloredCommand('  run')}           ${Colors.coloredHeader('alma run')}${Colors.coloredDescription(' - Run the Flutter app')}');
+  print('${Colors.coloredCommand('  clean')}         ${Colors.coloredHeader('alma clean')}${Colors.coloredDescription(' - Clean project dependencies and build artifacts')}');
+  print('${Colors.coloredCommand('  feature')}       ${Colors.coloredHeader('alma feature [name]')}${Colors.coloredDescription(' - Create a new feature module')}');
+  print('${Colors.coloredCommand('  version')}       ${Colors.coloredHeader('alma version')}${Colors.coloredDescription(' - Display Flutter version')}');
+  print('${Colors.coloredCommand('  logs')}          ${Colors.coloredHeader('alma logs')}${Colors.coloredDescription(' - Show Current Available Cli commands')}');
+  print('${Colors.coloredCommand('  gen')}           ${Colors.coloredHeader('alma gen')}${Colors.coloredDescription(' - Generate app code - run build_runner')}');
   print(Colors.coloredOptions(parser.usage));
 }
