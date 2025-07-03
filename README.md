@@ -41,7 +41,7 @@ sudo chmod +x /usr/local/bin/alma
 
 ###  ALL Available commands
 ```bash
-almaviva logs
+alma logs
 ```
 
 
