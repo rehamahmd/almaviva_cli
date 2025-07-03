@@ -1,7 +1,7 @@
 name: almaviva_cli
 description: A sample command-line application.
 version: 1.0.0
-# repository: https://github.com/my_org/my_repo
+repository: https://github.com/rehamahmd/almaviva_cli.git
 
 environment:
   sdk: ^3.8.1
@@ -23,6 +23,6 @@ dependencies:
 dev_dependencies:
   lints: ^5.0.0
   test: ^1.24.0
-
+ 
 executables:
   alma: almaviva_cli.dart

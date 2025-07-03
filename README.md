@@ -1,18 +1,24 @@
-# Flutter Cli for Almaviva 
+# Almaviva CLI 🚀
 
-A sample command-line application with an entrypoint in `bin/`, library code
-in `lib/`, and example unit test in `test/`.
+A powerful command-line tool for Flutter/Dart project management, scaffolding, and build automation.
 
+## Features
 
+- 🛠️ Project setup & initialization
+- 🏗️ Module/feature scaffolding
+- 🏃 Run projects with environment configurations
+- 🧹 Clean builds & dependencies
+- 🔍 CLI status checks
+- ⚡ Build runner integration
 
-# First Setup
-compile => dart compile exe bin/almaviva_cli.dart -o alma
-create_file => sudo chmod +x /usr/local/bin/alma
-move_file => sudo mv alma /usr/local/bin/
-- nano ~/.zshrc
-- export PATH="$PATH:$HOME/.pub-cache/bin"
-- source ~/.zshrc
+## Installation
 
+### From GitHub (Latest Version)
+```bash
+dart pub global activate --source git https://github.com/rehamahmd/almaviva_cli.git
+```
 
-dart pub global activate --source path .
-# almaviva_cli
+### SEE ALL Available commands
+```bash
+almaviva logs
+```
