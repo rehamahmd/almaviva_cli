@@ -61,7 +61,7 @@ rm -rf ~/.pub-cache/bin/alma*
 rm -rf ~/.pub-cache/global_packages/almaviva_cli*
 ```
 
-
+## Cli Current Features
 ![Cli Features](assets/logs.png)
 
 ---
