@@ -10,6 +10,7 @@ showStatus(){
   print('${Colors.coloredCommand('  Feature')}       ${Colors.coloredDescription(' ✅Done')}');
   print('${Colors.coloredCommand('  Logs')}          ${Colors.coloredDescription(' ✅Done')}');
   print('${Colors.coloredCommand('  Generate')}      ${Colors.coloredDescription(' ✅Done')}');
+  print('${Colors.coloredCommand('  l10n')}          ${Colors.coloredDescription(' ✅Done')}');
 
   print(Colors.coloredHeader('\nOptions:'));
 
