@@ -10,7 +10,7 @@ A powerful command-line tool for Flutter/Dart project management, scaffolding, a
 - 🧹 Clean builds & dependencies
 - 🔍 CLI status checks
 - ⚡ Build runner integration
-- ⚡ Generate CI [under_development]
+- 🔗 Generate CI [under_development]
 
 
 ## Installation
