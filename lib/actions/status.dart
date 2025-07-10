@@ -11,7 +11,7 @@ showStatus(){
   print('${Colors.coloredCommand('  Logs')}          ${Colors.coloredDescription(' ✅Done')}');
   print('${Colors.coloredCommand('  Generate')}      ${Colors.coloredDescription(' ✅Done')}');
   print('${Colors.coloredCommand('  l10n')}          ${Colors.coloredDescription(' ✅Done')}');
+  print('${Colors.coloredCommand('  ci azure')}      ${Colors.coloredOptions(' ⏳In Progress')}');
 
-  print(Colors.coloredHeader('\nOptions:'));
 
 }

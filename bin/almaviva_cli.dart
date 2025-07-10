@@ -11,8 +11,9 @@ import 'package:args/args.dart';
 import 'package:almaviva_cli/actions/cli_setup.dart';
 import 'package:almaviva_cli/actions/clone_project.dart';
 import 'package:almaviva_cli/actions/generate_localization.dart';
+import 'package:almaviva_cli/actions/generate_ci.dart';
 
-void main(List<String> arguments) {
+void main(List<String> arguments) async {
   final parser = ArgParser()
     ..addCommand('setup')
     ..addCommand('version')
@@ -22,7 +23,9 @@ void main(List<String> arguments) {
     ..addCommand('gen')
     ..addCommand('status')
     ..addCommand('logs')
-    ..addCommand('l10n');
+    ..addCommand('l10n')
+    ..addCommand('ci', ArgParser()
+      ..addCommand('azure'));
 
   final argResults = parser.parse(arguments);
 
@@ -68,6 +71,15 @@ void main(List<String> arguments) {
       break;
     case 'l10n':
       handleLocalizationGenerateCommand(argResults.command!.rest);
+      break;
+    case 'ci':
+      final ciCommand = argResults.command!.command;
+      if (ciCommand != null && ciCommand.name == 'azure') {
+        await handleGenerateCiAzureCommand();
+      } else {
+        // ADD OTHER CI COMMANDS HERE
+        print('Unknown ci subcommand');
+      }
       break;
     default:
       print('Unknown command');
