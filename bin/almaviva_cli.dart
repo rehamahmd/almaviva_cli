@@ -67,7 +67,7 @@ void main(List<String> arguments) {
       showStatus();
       break;
     case 'l10n':
-      handleLocalizationGenerateCommand();
+      handleLocalizationGenerateCommand(argResults.command!.rest);
       break;
     default:
       print('Unknown command');
