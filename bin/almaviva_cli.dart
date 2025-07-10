@@ -10,6 +10,7 @@ import 'package:almaviva_cli/actions/version.dart';
 import 'package:args/args.dart';
 import 'package:almaviva_cli/actions/cli_setup.dart';
 import 'package:almaviva_cli/actions/clone_project.dart';
+import 'package:almaviva_cli/actions/generate_localization.dart';
 
 void main(List<String> arguments) {
   final parser = ArgParser()
@@ -20,7 +21,8 @@ void main(List<String> arguments) {
     ..addCommand('feature')
     ..addCommand('gen')
     ..addCommand('status')
-    ..addCommand('logs');
+    ..addCommand('logs')
+    ..addCommand('l10n');
 
   final argResults = parser.parse(arguments);
 
@@ -63,7 +65,10 @@ void main(List<String> arguments) {
       break;
     case 'status':
       showStatus();
-      break;  
+      break;
+    case 'l10n':
+      handleLocalizationGenerateCommand();
+      break;
     default:
       print('Unknown command');
   }

@@ -1,6 +1,5 @@
 import 'dart:io';
 
-import 'package:almaviva_cli/helpers/run_command.dart';
 import 'package:cli_spinner/cli_spinner.dart';
 void createFeature(List<String> args) async {
   if (args.isEmpty) {

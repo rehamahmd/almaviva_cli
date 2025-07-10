@@ -1,7 +1,6 @@
 import 'dart:async';
 import 'dart:io';
 
-import 'package:almaviva_cli/helpers/loader.dart';
 
 class CloneProject {
   CloneProject._();
@@ -15,7 +14,6 @@ class CloneProject {
     final controller = StreamController<bool>();
 
     // Start the loader
-    showLoader(controller);
     controller.add(true); // Signal that loading has started
 
     try {
