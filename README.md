@@ -11,6 +11,8 @@ A powerful command-line tool for Flutter/Dart project management, scaffolding, a
 - 🔍 CLI status checks
 - ⚡ Build runner integration
 
+![Cli Features](assets/logs.png)
+
 ## Installation
 
 ### From GitHub (Latest Version)
