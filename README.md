@@ -11,7 +11,6 @@ A powerful command-line tool for Flutter/Dart project management, scaffolding, a
 - 🔍 CLI status checks
 - ⚡ Build runner integration
 
-![Cli Features](assets/logs.png)
 
 ## Installation
 
@@ -62,6 +61,8 @@ rm -rf ~/.pub-cache/bin/alma*
 rm -rf ~/.pub-cache/global_packages/almaviva_cli*
 ```
 
+
+![Cli Features](assets/logs.png)
 
 ---
 Note: CLI still under development 
