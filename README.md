@@ -44,7 +44,7 @@ sudo chmod +x /usr/local/bin/alma
 ```bash
 alma logs
 ```
-
+![Cli Features](assets/logs.png)
 
 ## Uninstalling
 ### 1. Deactivate Package
@@ -61,8 +61,6 @@ rm -rf ~/.pub-cache/bin/alma*
 rm -rf ~/.pub-cache/global_packages/almaviva_cli*
 ```
 
-## Cli Current Features
-![Cli Features](assets/logs.png)
 
 ---
 Note: CLI still under development 
