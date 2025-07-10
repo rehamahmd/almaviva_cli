@@ -11,6 +11,6 @@ void showCommands(ArgParser parser) {
   print('${Colors.coloredCommand('  version')}       ${Colors.coloredHeader('alma version')}${Colors.coloredDescription(' - Display Flutter version')}');
   print('${Colors.coloredCommand('  logs')}          ${Colors.coloredHeader('alma logs')}${Colors.coloredDescription(' - Show Current Available Cli commands')}');
   print('${Colors.coloredCommand('  gen')}           ${Colors.coloredHeader('alma gen')}${Colors.coloredDescription(' - Generate app code - run build_runner')}');
-  print('${Colors.coloredCommand('  l10n')}           ${Colors.coloredHeader('alma l10n')}${Colors.coloredDescription(' - Generate App localization files')}');
+  print('${Colors.coloredCommand('  l10n')}          ${Colors.coloredHeader('alma l10n')}${Colors.coloredDescription(' - Generate App localization files')}');
   print(Colors.coloredOptions(parser.usage));
 }
